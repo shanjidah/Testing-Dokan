@@ -1,0 +1,792 @@
+<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar" lang="en-US"><!--<![endif]--><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Dashboard ‹ dokannew — WordPress</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = '/dokannew/wp-admin/admin-ajax.php',
+	pagenow = 'dashboard',
+	typenow = '',
+	adminpage = 'index-php',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" href="http://localhost:8888/dokannew/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load%5Bchunk_0%5D=dashicons,admin-bar,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,themes,about,nav-menus,wp-pointer,widgets&amp;load%5Bchunk_1%5D=,site-icon,l10n,buttons,wp-auth-check&amp;ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="wc_connect_banner-css" href="http://localhost:8888/dokannew/wp-content/plugins/woocommerce-services/dist/woocommerce-services-banner-1.22.3.css" media="all">
+<link rel="stylesheet" id="thickbox-css" href="http://localhost:8888/dokannew/wp-includes/js/thickbox/thickbox.css?ver=5.3.2" media="all">
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='ie-css'  href='http://localhost:8888/dokannew/wp-admin/css/ie.min.css?ver=5.3.2' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="dps-custom-style-css" href="http://localhost:8888/dokannew/wp-content/plugins/dokan-plugin/includes/modules/subscription/assets/css/style.css?ver=20200204" media="all">
+<link rel="stylesheet" id="jquery-ui-style-css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css?ver=5.3.2" media="all">
+<link rel="stylesheet" id="wc_bookings_admin_styles-css" href="http://localhost:8888/dokannew/wp-content/plugins/woocommerce-bookings/dist/css/admin.css?ver=1.15.5" media="all">
+<link rel="stylesheet" id="simple-auction-admin-css" href="http://localhost:8888/dokannew/wp-content/plugins/woocommerce-simple-auctions//css/admin.css?ver=5.3.2" media="all">
+<link rel="stylesheet" id="woocommerce_admin_menu_styles-css" href="http://localhost:8888/dokannew/wp-content/plugins/woocommerce/assets/css/menu.css?ver=3.9.1" media="all">
+<link rel="stylesheet" id="woocommerce_admin_dashboard_styles-css" href="http://localhost:8888/dokannew/wp-content/plugins/woocommerce/assets/css/dashboard.css?ver=3.9.1" media="all">
+<link rel="stylesheet" id="woocommerce-activation-css" href="http://localhost:8888/dokannew/wp-content/plugins/woocommerce/assets/css/activation.css?ver=3.9.1" media="all">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost:8888\/dokannew\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://localhost:8888/dokannew/wp-includes/js/wp-emoji-release.min.js?ver=5.3.2" type="text/javascript" defer=""></script>
+		
+<script type="text/javascript">
+/* <![CDATA[ */
+var userSettings = {"url":"\/dokannew\/","uid":"1","time":"1580800896","secure":""};var _wpUtilSettings = {"ajax":{"url":"\/dokannew\/wp-admin\/admin-ajax.php"}};/* ]]> */
+</script>
+<script type="text/javascript" src="http://localhost:8888/dokannew/wp-admin/load-scripts.php?c=1&amp;load%5Bchunk_0%5D=jquery-core,jquery-migrate,utils,underscore,wp-util&amp;ver=5.3.2"></script>
+<script src="http://localhost:8888/dokannew/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4"></script>
+<script>
+( 'fetch' in window ) || document.write( '<script src="http://localhost:8888/dokannew/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="http://localhost:8888/dokannew/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.26.0-0"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="http://localhost:8888/dokannew/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="http://localhost:8888/dokannew/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script src="http://localhost:8888/dokannew/wp-includes/js/dist/dom-ready.min.js?ver=2.5.1"></script>
+<script src="http://localhost:8888/dokannew/wp-includes/js/dist/a11y.min.js?ver=2.5.1"></script>
+<script src="http://localhost:8888/dokannew/wp-includes/js/wp-sanitize.min.js?ver=5.3.2"></script>
+<script>
+var _wpUpdatesSettings = {"ajax_nonce":"587138d60d","l10n":{"searchResults":"Search results for &#8220;%s&#8221;","searchResultsLabel":"Search Results","noPlugins":"You do not appear to have any plugins available at this time.","noItemsSelected":"Please select at least one item to perform this action on.","updating":"Updating...","pluginUpdated":"Updated!","themeUpdated":"Updated!","update":"Update","updateNow":"Update Now","pluginUpdateNowLabel":"Update %s now","updateFailedShort":"Update Failed!","updateFailed":"Update Failed: %s","pluginUpdatingLabel":"Updating %s...","pluginUpdatedLabel":"%s updated!","pluginUpdateFailedLabel":"%s update failed","updatingMsg":"Updating... please wait.","updatedMsg":"Update completed successfully.","updateCancel":"Update canceled.","beforeunload":"Updates may not complete if you navigate away from this page.","installNow":"Install Now","pluginInstallNowLabel":"Install %s now","installing":"Installing...","pluginInstalled":"Installed!","themeInstalled":"Installed!","installFailedShort":"Installation Failed!","installFailed":"Installation failed: %s","pluginInstallingLabel":"Installing %s...","themeInstallingLabel":"Installing %s...","pluginInstalledLabel":"%s installed!","themeInstalledLabel":"%s installed!","pluginInstallFailedLabel":"%s installation failed","themeInstallFailedLabel":"%s installation failed","installingMsg":"Installing... please wait.","installedMsg":"Installation completed successfully.","importerInstalledMsg":"Importer installed successfully. <a href=\"%s\">Run importer<\/a>","aysDelete":"Are you sure you want to delete %s?","aysDeleteUninstall":"Are you sure you want to delete %s and its data?","aysBulkDelete":"Are you sure you want to delete the selected plugins and their data?","aysBulkDeleteThemes":"Caution: These themes may be active on other sites in the network. Are you sure you want to proceed?","deleting":"Deleting...","deleteFailed":"Deletion failed: %s","pluginDeleted":"Deleted!","themeDeleted":"Deleted!","livePreview":"Live Preview","activatePlugin":"Activate","activateTheme":"Activate","activatePluginLabel":"Activate %s","activateThemeLabel":"Activate %s","activateImporter":"Run Importer","activateImporterLabel":"Run %s","unknownError":"Something went wrong.","connectionError":"Connection lost or the server is busy. Please try again later.","nonceError":"An error has occurred. Please reload the page and try again.","pluginsFound":"Number of plugins found: %d","noPluginsFound":"No plugins found. Try a different search."}};
+</script>
+<script src="http://localhost:8888/dokannew/wp-admin/js/updates.min.js?ver=5.3.2"></script>
+<script>
+var wcs_nux_notice = {"nonce":"6a5f07b534","initial_install_status":"uninstalled","redirect_url":"http:\/\/localhost:8888\/dokannew\/wp-admin\/","translations":{"activating":"Activating...","connecting":"Connecting...","installError":"There was an error installing Jetpack. Please try installing it manually.","defaultError":"Something went wrong. Please try connecting to Jetpack manually, or contact support on the WordPress.org forums."}};
+</script>
+<script src="http://localhost:8888/dokannew/wp-content/plugins/woocommerce-services/dist/woocommerce-services-banner-1.22.3.js"></script>
+<script src="http://localhost:8888/dokannew/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4"></script>
+<script src="http://localhost:8888/dokannew/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js"></script>
+<script>
+var dokan_admin = {"ajaxurl":"http:\/\/localhost:8888\/dokannew\/wp-admin\/admin-ajax.php","nonce":"26552bf53d","activating":"Activating","deactivating":"Deactivating","combine_commission_desc":"Amount you will get from sales in both percentage and fixed fee","default_commission_desc":"It will override the default commission admin gets from each sales"};
+</script>
+<script src="http://localhost:8888/dokannew/wp-content/plugins/dokan-plugin/assets/js/dokan-pro-admin.js?ver=5.3.2"></script>
+<script src="http://localhost:8888/dokannew/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4"></script>
+<script>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script src="http://localhost:8888/dokannew/wp-content/plugins/woocommerce/assets/js/admin/reports.min.js?ver=3.9.1"></script>
+<script src="http://localhost:8888/dokannew/wp-content/plugins/woocommerce/assets/js/jquery-flot/jquery.flot.min.js?ver=3.9.1"></script>
+<script src="http://localhost:8888/dokannew/wp-content/plugins/woocommerce/assets/js/jquery-flot/jquery.flot.resize.min.js?ver=3.9.1"></script>
+<script src="http://localhost:8888/dokannew/wp-content/plugins/woocommerce/assets/js/jquery-flot/jquery.flot.time.min.js?ver=3.9.1"></script>
+<script src="http://localhost:8888/dokannew/wp-content/plugins/woocommerce/assets/js/jquery-flot/jquery.flot.pie.min.js?ver=3.9.1"></script>
+<script src="http://localhost:8888/dokannew/wp-content/plugins/woocommerce/assets/js/jquery-flot/jquery.flot.stack.min.js?ver=3.9.1"></script>
+	<link id="wp-admin-canonical" rel="canonical" href="http://localhost:8888/dokannew/wp-admin/">
+	<script>
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( 'wp-admin-canonical' ).href + window.location.hash );
+		}
+	</script>
+	<script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#a0a5aa","focus":"#00a0d2","current":"#fff"}};</script>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+	</head>
+<body class="wp-admin wp-core-ui js index-php auto-fold admin-bar branch-5-3 version-5-3-2 admin-color-fresh locale-en-us customize-support svg">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+	<!--[if lte IE 8]>
+		<script type="text/javascript">
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, '' ) + ' no-customize-support';
+		</script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+		<script type="text/javascript">
+			(function() {
+				var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, ' ' );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+			}());
+		</script>
+	<!--<![endif]-->
+	
+<div id="wpwrap">
+
+<div id="adminmenumain" role="navigation" aria-label="Main menu">
+<a href="#wpbody-content" class="screen-reader-shortcut">Skip to main content</a>
+<a href="#wp-toolbar" class="screen-reader-shortcut">Skip to toolbar</a>
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap">
+<ul id="adminmenu">
+
+
+	<li class="wp-first-item wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-top-first menu-icon-dashboard menu-top-first menu-top-last" id="menu-dashboard">
+	<a href="index.php" class="wp-first-item wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-top-first menu-icon-dashboard menu-top-first menu-top-last" aria-haspopup="false"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-dashboard"><br></div><div class="wp-menu-name">Dashboard</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Dashboard</li><li class="wp-first-item current"><a href="index.php" class="wp-first-item current" aria-current="page">Home</a></li><li><a href="update-core.php">Updates <span class="update-plugins count-0"><span class="update-count">0</span></span></a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first" id="menu-posts">
+	<a href="edit.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-post"><br></div><div class="wp-menu-name">Posts</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Posts</li><li class="wp-first-item"><a href="edit.php" class="wp-first-item">All Posts</a></li><li><a href="post-new.php">Add New</a></li><li><a href="edit-tags.php?taxonomy=category">Categories</a></li><li><a href="edit-tags.php?taxonomy=post_tag">Tags</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<a href="upload.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-media"><br></div><div class="wp-menu-name">Media</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Media</li><li class="wp-first-item"><a href="upload.php" class="wp-first-item">Library</a></li><li><a href="media-new.php">Add New</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_dokan opensub" id="toplevel_page_dokan">
+	<a href="admin.php?page=dokan#/" class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_dokan" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image svg" style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNThweCIgaGVpZ2h0PSI2M3B4IiB2aWV3Qm94PSIwIDAgNTggNjMiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9IiNhMGE1YWEiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGcgaWQ9ImRva2FuLWljb24iIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI2EwYTVhYSI+PHBhdGggZD0iTTUuMzM4Njc3MDIsMy4wOTk3MTIzIEM1LjMzODY3NzAyLDMuMDk5NzEyMyA0MC42NTY4MDMxLDAuODMzMjU1OTkzIDQwLjY1NjgwMzEsMjcuNzcyNDIyMyBDNDAuNjU2ODAzMSw1NC43MTE1ODg1IDMxLjMyNTg4NzksNjAuMTE5NDE5OSAyMy4xNDM2ODI3LDYxLjg2OTI1NzUgQzIzLjE0MzY4MjcsNjEuODY5MjU3NSA1Ny4xNzE4NjM5LDY5LjExODU4NDcgNTcuMTcxODYzOSwzMS4xODA0MzkzIEM1Ny4xNzE4NjM5LC02Ljc1NzcwNjExIDEzLjc2NTY4OTIsLTEuMjgzMjE0MjMgNS4zMzg2NzcwMiwzLjA5OTcxMjMgWiIgaWQ9IlNoYXBlIj48L3BhdGg+PHBhdGggZD0iTTM0LjA1NjQyODIsNDguOTcwNDU0NyBDMzQuMDU2NDI4Miw0OC45NzA0NTQ3IDMwLjY0Nzk2MDYsNTkuNDQ0NDgyNiAyMC4zNDcyMzI5LDYwLjc3NzY5MjIgQzEwLjA0NjUwNTEsNjIuMTEwOTAxNyA4LjEyNTcxMTIyLDU3LjE1MzAyODYgMC45NDE1NjU2MTEsNTcuNDk0NjYzNSBDMC45NDE1NjU2MTEsNTcuNDk0NjYzNSAwLjM1Nzc5NDkzMiw1Mi41Nzg0NTMyIDYuMTU3ODM5MSw1MS44ODY4NTA3IEMxMS45NTc4ODMzLDUxLjE5NTI0ODIgMjIuODIzNTUwNCw1Mi41NDUxMjI5IDMwLjA1NDc3NDMsNDguNTAzODMxNCBDMzAuMDU0Nzc0Myw0OC41MDM4MzE0IDM0LjMyOTQ4MjIsNDYuNTIwNjgyMSAzNS4xNjc0NzU2LDQ1LjU2MjQzNzcgTDM0LjA1NjQyODIsNDguOTcwNDU0NyBaIiBpZD0iU2hhcGUiPjwvcGF0aD48cGF0aCBkPSJNNC44MDE5ODQ2Miw0Ljk5OTUzNTk2IEw0LjgwMTk4NDYyLDE3Ljk3MzMzMTggTDQuODAxOTg0NjIsMTcuOTczMzMxOCBMNC44MDE5ODQ2Miw1MC4yODY5OTkyIEM1LjE2MTc3NzYsNTAuMjA1MzEzNiA1LjUyNjQwODQ3LDUwLjE0MTMzMjYgNS44OTQyMDA3Myw1MC4wOTUzNTAzIEM3LjkyNzAxNzAxLDQ5LjkwMzU3MSA5Ljk3MDA0NTQ0LDQ5LjgwODk5NzkgMTIuMDE0Mzc3Miw0OS44MTIwNDMzIEMxNC4xNDIzMTU1LDQ5LjgxMjA0MzMgMTYuNDY3OTgyNSw0OS43MzcwNTAyIDE4Ljc5MzY0OTYsNDkuNTQ1NDAxNCBMMTguNzkzNjQ5NiwzNC4zMTM0ODE4IEMxOC43OTM2NDk2LDI5LjI0NzI4NTQgMTguNDI2NDM5LDI0LjA3Mjc2NTYgMTguNzkzNjQ5NiwxOS4wMTQ5MDE4IEMxOS4xODYxMjYsMTUuOTU5NDMyNCAyMS40NTkxNzUsMTMuMzQ3OTExNSAyNC42OTcyNjYsMTIuMjMyMTk4IEMyNy4yODM1ODExLDExLjM3OTI1NDggMzAuMTU4NjQzMSwxMS41NDYwNDcgMzIuNTk3MDAxNSwxMi42OTA0ODg4IEMyMC45NDk4MzQ4LDUuMDQ5NTMxMzIgNy44NjIwNzI4NSw0Ljg5OTU0NTI0IDQuODAxOTg0NjIsNC45OTk1MzU5NiBaIiBpZD0iU2hhcGUiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==&quot;) !important;"><br></div><div class="wp-menu-name">Dokan</div></a>
+	<ul class="wp-submenu wp-submenu-wrap" style="margin-top: -29px;"><li class="wp-submenu-head" aria-hidden="true">Dokan</li><li class="wp-first-item"><a href="admin.php?page=dokan#/" class="wp-first-item">Dashboard</a></li><li><a href="admin.php?page=dokan#/withdraw?status=pending">Withdraw</a></li><li><a href="admin.php?page=dokan#/vendors">Vendors</a></li><li><a href="admin.php?page=dokan#/abuse-reports">Abuse Reports</a></li><li><a href="admin.php?page=dokan#/store-reviews">Store Reviews</a></li><li><a href="admin.php?page=dokan#/announcement">Announcements</a></li><li><a href="admin.php?page=dokan#/refund?status=pending">Refunds</a></li><li><a href="admin.php?page=dokan#/reports">Reports</a></li><li><a href="admin.php?page=dokan#/modules">Modules</a></li><li><a href="admin.php?page=dokan#/tools">Tools</a></li><li><a href="admin.php?page=dokan-seller-verifications">Verifications</a></li><li><a href="admin.php?page=dokan#/wholesale-customer">Wholesale Customer</a></li><li><a href="admin.php?page=dokan#/help"><span style="color:#f18500">Help</span></a></li><li><a href="admin.php?page=dokan#/settings">Settings</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<a href="edit.php?post_type=page" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-page"><br></div><div class="wp-menu-name">Pages</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Pages</li><li class="wp-first-item"><a href="edit.php?post_type=page" class="wp-first-item">All Pages</a></li><li><a href="post-new.php?post_type=page">Add New</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments" id="menu-comments">
+	<a href="edit-comments.php" class="wp-not-current-submenu menu-top menu-icon-comments"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-comments"><br></div><div class="wp-menu-name">Comments <span class="awaiting-mod count-0"><span class="pending-count" aria-hidden="true">0</span><span class="comments-in-moderation-text screen-reader-text">0 Comments in moderation</span></span></div></a></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_email-log menu-top-last" id="toplevel_page_email-log"><a href="admin.php?page=email-log" class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_email-log menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-email-alt"><br></div><div class="wp-menu-name">Email Log</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Email Log</li><li class="wp-first-item"><a href="admin.php?page=email-log" class="wp-first-item">View Logs</a></li><li><a href="admin.php?page=email-log-settings">Settings</a></li><li><a href="admin.php?page=email-log-addons">Add-ons</a></li><li><a href="admin.php?page=email-log-system-info">System Info</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator woocommerce" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-generic toplevel_page_woocommerce menu-top-first" id="toplevel_page_woocommerce">
+	<a href="edit.php?post_type=shop_order" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-generic toplevel_page_woocommerce menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-generic"><br></div><div class="wp-menu-name">WooCommerce</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">WooCommerce</li><li class="wp-first-item"><a href="edit.php?post_type=shop_order" class="wp-first-item">Orders</a></li><li><a href="edit.php?post_type=shop_coupon">Coupons</a></li><li><a href="admin.php?page=auctions-activity">Auctions Activity</a></li><li><a href="admin.php?page=wc-reports">Reports</a></li><li><a href="admin.php?page=wc-settings">Settings</a></li><li><a href="admin.php?page=wc-status">Status</a></li><li><a href="admin.php?page=wc-addons">Extensions </a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-product" id="menu-posts-product">
+	<a href="edit.php?post_type=product" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-product" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-post"><br></div><div class="wp-menu-name">Products</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Products</li><li class="wp-first-item"><a href="edit.php?post_type=product" class="wp-first-item">All Products</a></li><li><a href="post-new.php?post_type=product">Add New</a></li><li><a href="edit-tags.php?taxonomy=product_cat&amp;post_type=product">Categories</a></li><li><a href="edit-tags.php?taxonomy=product_tag&amp;post_type=product">Tags</a></li><li><a href="edit.php?post_type=product&amp;page=addons">Add-ons</a></li><li><a href="edit.php?post_type=product&amp;page=product_attributes">Attributes</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-wc_booking menu-top-last" id="menu-posts-wc_booking">
+	<a href="edit.php?post_type=wc_booking" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-wc_booking menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-calendar-alt"><br></div><div class="wp-menu-name">Bookings</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Bookings</li><li class="wp-first-item"><a href="edit.php?post_type=wc_booking" class="wp-first-item">All Bookings</a></li><li><a href="edit.php?post_type=bookable_resource">Resources</a></li><li><a href="edit.php?post_type=wc_booking&amp;page=create_booking">Add Booking</a></li><li><a href="edit.php?post_type=wc_booking&amp;page=booking_calendar">Calendar</a></li><li><a href="edit.php?post_type=wc_booking&amp;page=booking_notification">Send Notification</a></li><li><a href="edit.php?post_type=wc_booking&amp;page=wc_bookings_settings">Settings</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+	<a href="themes.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-appearance"><br></div><div class="wp-menu-name">Appearance</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Appearance</li><li class="wp-first-item"><a href="themes.php" class="wp-first-item">Themes</a></li><li class="hide-if-no-customize"><a href="customize.php?return=%2Fdokannew%2Fwp-admin%2F" class="hide-if-no-customize">Customize</a></li><li><a href="widgets.php">Widgets</a></li><li><a href="nav-menus.php">Menus</a></li><li class="hide-if-no-customize"><a href="customize.php?return=%2Fdokannew%2Fwp-admin%2F&amp;autofocus%5Bcontrol%5D=background_image" class="hide-if-no-customize">Background</a></li><li><a href="edit.php?post_type=dokan_slider">Slider</a></li><li><a href="themes.php?page=custom-background">Background</a></li><li><a href="theme-editor.php">Theme Editor</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" id="menu-plugins">
+	<a href="plugins.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-plugins"><br></div><div class="wp-menu-name">Plugins <span class="update-plugins count-0"><span class="plugin-count">0</span></span></div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Plugins <span class="update-plugins count-0"><span class="plugin-count">0</span></span></li><li class="wp-first-item"><a href="plugins.php" class="wp-first-item">Installed Plugins</a></li><li><a href="plugin-install.php">Add New</a></li><li><a href="plugin-editor.php">Plugin Editor</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<a href="users.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-users"><br></div><div class="wp-menu-name">Users</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Users</li><li class="wp-first-item"><a href="users.php" class="wp-first-item">All Users</a></li><li><a href="user-new.php">Add New</a></li><li><a href="profile.php">Your Profile</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<a href="tools.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-tools"><br></div><div class="wp-menu-name">Tools</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Tools</li><li class="wp-first-item"><a href="tools.php" class="wp-first-item">Available Tools</a></li><li><a href="import.php">Import</a></li><li><a href="export.php">Export</a></li><li><a href="site-health.php">Site Health</a></li><li><a href="export-personal-data.php">Export Personal Data</a></li><li><a href="erase-personal-data.php">Erase Personal Data</a></li><li><a href="tools.php?page=action-scheduler">Scheduled Actions</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" id="menu-settings">
+	<a href="options-general.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-settings"><br></div><div class="wp-menu-name">Settings</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Settings</li><li class="wp-first-item"><a href="options-general.php" class="wp-first-item">General</a></li><li><a href="options-writing.php">Writing</a></li><li><a href="options-reading.php">Reading</a></li><li><a href="options-discussion.php">Discussion</a></li><li><a href="options-media.php">Media</a></li><li><a href="options-permalink.php">Permalinks</a></li><li><a href="options-privacy.php">Privacy</a></li></ul></li><li id="collapse-menu" class="hide-if-no-js"><button type="button" id="collapse-button" aria-label="Collapse Main menu" aria-expanded="true"><span class="collapse-button-icon" aria-hidden="true"></span><span class="collapse-button-label">Collapse menu</span></button></li></ul>
+</div>
+</div>
+<div id="wpcontent">
+
+		<div id="wpadminbar" class="nojq">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-menu-toggle"><a class="ab-item" href="#" aria-expanded="false"><span class="ab-icon"></span><span class="screen-reader-text">Menu</span></a></li><li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/dokannew/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu"><li id="wp-admin-bar-about"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/about.php">About WordPress</a></li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu"><li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a></li><li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Documentation</a></li><li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/">Support</a></li><li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li></ul></div></li><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/dokannew/">dokannew</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu"><li id="wp-admin-bar-view-site"><a class="ab-item" href="http://localhost:8888/dokannew/">Visit Site</a></li><li id="wp-admin-bar-view-store"><a class="ab-item" href="http://localhost:8888/dokannew/shop/">Visit Store</a></li></ul></div></li><li id="wp-admin-bar-comments"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/edit-comments.php"><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 Comments in moderation</span></a></li><li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/dokannew/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu"><li id="wp-admin-bar-new-post"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/post-new.php">Post</a></li><li id="wp-admin-bar-new-media"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/media-new.php">Media</a></li><li id="wp-admin-bar-new-page"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/post-new.php?post_type=page">Page</a></li><li id="wp-admin-bar-new-product"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/post-new.php?post_type=product">Product</a></li><li id="wp-admin-bar-new-shop_order"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/post-new.php?post_type=shop_order">Order</a></li><li id="wp-admin-bar-new-shop_coupon"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/post-new.php?post_type=shop_coupon">Coupon</a></li><li id="wp-admin-bar-new-bookable_resource"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/post-new.php?post_type=bookable_resource">Bookable resource</a></li><li id="wp-admin-bar-new-wc_booking"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/edit.php?post_type=wc_booking&amp;page=create_booking">Booking</a></li><li id="wp-admin-bar-new-user"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/user-new.php">User</a></li></ul></div></li><li id="wp-admin-bar-dokan" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/dokannew/wp-admin/admin.php?page=dokan">Dokan</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-dokan-default" class="ab-submenu"><li id="wp-admin-bar-dokan-dashboard"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/admin.php?page=dokan">Dashboard</a></li><li id="wp-admin-bar-dokan-withdraw"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/admin.php?page=dokan#/withdraw">Withdraw</a></li><li id="wp-admin-bar-dokan-settings"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/admin.php?page=dokan#/settings">Settings</a></li><li id="wp-admin-bar-dokan-sellers"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/admin.php?page=dokan#/vendors">Vendors</a></li><li id="wp-admin-bar-dokan-reports"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/admin.php?page=dokan#/reports">Reports</a></li></ul></div></li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu"><li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/dokannew/wp-admin/profile.php">Howdy, <span class="display-name">admin</span><img alt="" src="http://0.gravatar.com/avatar/32b9d19c8665f49b5960735c0e279a2d?s=26&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/32b9d19c8665f49b5960735c0e279a2d?s=52&amp;d=mm&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu"><li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://localhost:8888/dokannew/wp-admin/profile.php"><img alt="" src="http://0.gravatar.com/avatar/32b9d19c8665f49b5960735c0e279a2d?s=64&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/32b9d19c8665f49b5960735c0e279a2d?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name">admin</span></a></li><li id="wp-admin-bar-edit-profile"><a class="ab-item" href="http://localhost:8888/dokannew/wp-admin/profile.php">Edit My Profile</a></li><li id="wp-admin-bar-logout"><a class="ab-item" href="http://localhost:8888/dokannew/wp-login.php?action=logout&amp;_wpnonce=bacfd8c4c6">Log Out</a></li></ul></div></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://localhost:8888/dokannew/wp-login.php?action=logout&amp;_wpnonce=bacfd8c4c6">Log Out</a>
+					</div>
+
+		
+<div id="wpbody" role="main">
+
+<div id="wpbody-content" style="overflow: hidden;">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden" tabindex="-1" aria-label="Contextual Help Tab">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+						
+							<li id="tab-link-overview" class="active">
+								<a href="#tab-panel-overview" aria-controls="tab-panel-overview">
+									Overview								</a>
+							</li>
+							
+							<li id="tab-link-help-navigation">
+								<a href="#tab-panel-help-navigation" aria-controls="tab-panel-help-navigation">
+									Navigation								</a>
+							</li>
+							
+							<li id="tab-link-help-layout">
+								<a href="#tab-panel-help-layout" aria-controls="tab-panel-help-layout">
+									Layout								</a>
+							</li>
+							
+							<li id="tab-link-help-content">
+								<a href="#tab-panel-help-content" aria-controls="tab-panel-help-content">
+									Content								</a>
+							</li>
+													</ul>
+					</div>
+
+										<div class="contextual-help-sidebar">
+						<p><strong>For more information:</strong></p><p><a href="https://wordpress.org/support/article/dashboard-screen/">Documentation on Dashboard</a></p><p><a href="https://wordpress.org/support/">Support</a></p>					</div>
+					
+					<div class="contextual-help-tabs-wrap">
+						
+							<div id="tab-panel-overview" class="help-tab-content active">
+								<p>Welcome to your WordPress Dashboard! This is the screen you will see when you log in to your site, and gives you access to all the site management features of WordPress. You can get help for any screen by clicking the Help tab above the screen title.</p>							</div>
+							
+							<div id="tab-panel-help-navigation" class="help-tab-content">
+								<p>The left-hand navigation menu provides links to all of the WordPress administration screens, with submenu items displayed on hover. You can minimize this menu to a narrow icon strip by clicking on the Collapse Menu arrow at the bottom.</p><p>Links in the Toolbar at the top of the screen connect your dashboard and the front end of your site, and provide access to your profile and helpful WordPress information.</p>							</div>
+							
+							<div id="tab-panel-help-layout" class="help-tab-content">
+								<p>You can use the following controls to arrange your Dashboard screen to suit your workflow. This is true on most other administration screens as well.</p><p><strong>Screen Options</strong> — Use the Screen Options tab to choose which Dashboard boxes to show.</p><p><strong>Drag and Drop</strong> — To rearrange the boxes, drag and drop by clicking on the title bar of the selected box and releasing when you see a gray dotted-line rectangle appear in the location you want to place the box.</p><p><strong>Box Controls</strong> — Click the title bar of the box to expand or collapse it. Some boxes added by plugins may have configurable content, and will show a “Configure” link in the title bar if you hover over it.</p>							</div>
+							
+							<div id="tab-panel-help-content" class="help-tab-content">
+								<p>The boxes on your Dashboard screen are:</p><p><strong>At A Glance</strong> — Displays a summary of the content on your site and identifies which theme and version of WordPress you are using.</p><p><strong>Activity</strong> — Shows the upcoming scheduled posts, recently published posts, and the most recent comments on your posts and allows you to moderate them.</p><p><strong>Quick Draft</strong> — Allows you to create a new post and save it as a draft. Also displays links to the 3 most recent draft posts you've started.</p><p><strong>WordPress Events and News</strong> — Upcoming events near you as well as the latest news from the official WordPress project and the <a href="https://planet.wordpress.org/">WordPress Planet</a>.</p><p><strong>Welcome</strong> — Shows links for some of the most common tasks when setting up a new site.</p>							</div>
+												</div>
+				</div>
+			</div>
+		<div id="screen-options-wrap" class="hidden" tabindex="-1" aria-label="Screen Options Tab">
+<form id="adv-settings" method="post">
+		<fieldset class="metabox-prefs">
+		<legend>Boxes</legend>
+		<label for="dashboard_right_now-hide"><input class="hide-postbox-tog" name="dashboard_right_now-hide" type="checkbox" id="dashboard_right_now-hide" value="dashboard_right_now" checked="checked">At a Glance</label><label for="dashboard_activity-hide"><input class="hide-postbox-tog" name="dashboard_activity-hide" type="checkbox" id="dashboard_activity-hide" value="dashboard_activity" checked="checked">Activity</label><label for="email_log_dashboard_widget-hide"><input class="hide-postbox-tog" name="email_log_dashboard_widget-hide" type="checkbox" id="email_log_dashboard_widget-hide" value="email_log_dashboard_widget" checked="checked">Email Logs Summary</label><label for="woocommerce_dashboard_recent_reviews-hide"><input class="hide-postbox-tog" name="woocommerce_dashboard_recent_reviews-hide" type="checkbox" id="woocommerce_dashboard_recent_reviews-hide" value="woocommerce_dashboard_recent_reviews" checked="checked">WooCommerce Recent Reviews</label><label for="woocommerce_dashboard_status-hide"><input class="hide-postbox-tog" name="woocommerce_dashboard_status-hide" type="checkbox" id="woocommerce_dashboard_status-hide" value="woocommerce_dashboard_status" checked="checked">WooCommerce Status</label><label for="dashboard_quick_press-hide"><input class="hide-postbox-tog" name="dashboard_quick_press-hide" type="checkbox" id="dashboard_quick_press-hide" value="dashboard_quick_press" checked="checked"><span class="hide-if-no-js">Quick Draft</span> <span class="hide-if-js">Your Recent Drafts</span></label><label for="dashboard_primary-hide"><input class="hide-postbox-tog" name="dashboard_primary-hide" type="checkbox" id="dashboard_primary-hide" value="dashboard_primary" checked="checked">WordPress Events and News</label><label for="sa_dashboard_products_news-hide"><input class="hide-postbox-tog" name="sa_dashboard_products_news-hide" type="checkbox" id="sa_dashboard_products_news-hide" value="sa_dashboard_products_news" checked="checked">wpgenie.org - Our latest themes and plugins</label><label for="wp_welcome_panel-hide"><input type="checkbox" id="wp_welcome_panel-hide" checked="checked">Welcome</label>
+		</fieldset>
+		
+<input type="hidden" id="screenoptionnonce" name="screenoptionnonce" value="42bc67e2fe">
+</form>
+</div>		</div>
+				<div id="screen-meta-links">
+					<div id="screen-options-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<button type="button" id="show-settings-link" class="button show-settings" aria-controls="screen-options-wrap" aria-expanded="false">Screen Options</button>
+			</div>
+						<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<button type="button" id="contextual-help-link" class="button show-settings" aria-controls="contextual-help-wrap" aria-expanded="false">Help</button>
+			</div>
+				</div>
+		
+            
+
+            <script type="text/javascript">
+                jQuery('body').on('click', '#dokan-pro-whats-new-notice .notice-dismiss', function(e) {
+                    e.preventDefault();
+
+                    wp.ajax.post('dokan-whats-new-notice', {
+                        dokan_promotion_dismissed: true
+                    });
+                });
+            </script>
+       
+
+
+
+<div class="wrap">
+	<h1>Dashboard</h1><div class="error"><p>Dokan Elementor module requires both <strong>Elementor</strong> and <strong>Elementor Pro</strong> to be activated</p></div><div id="message" class="error notice is-dismissible">
+    <p><strong>Dokan Geolocation Module</strong> requires Google Map API Key. Please set your API Key in <strong>Dokan Admin Settings &gt; Appearance &gt; Google Map API Key</strong>.</p>
+<button type="button" class="notice-dismiss"><span class="screen-reader-text">Dismiss this notice.</span></button></div><div class="error"><p><b>Dokan Vendor Subscription Product Addon </b> requires <a target="_blank" href="https://woocommerce.com/products/woocommerce-subscriptions/">WooCommerce Subscriptions plugin</a> to be installed &amp; activated first !</p></div><div class="updated">
+					   	<p>Woocommerce Simple Auction recommends that you set up a cron job to check finished: <b>http://localhost:8888/dokannew/?auction-cron=check</b>. Set it to every minute| <a href="/dokannew/wp-admin/?cron_check_ignore=0">Hide Notice</a></p>
+						</div><div class="updated">
+					   	<p>Woocommerce Simple Auction recommends that you set up a cron job to send emails: <b>http://localhost:8888/dokannew/?auction-cron=mails</b>. Set it every 2 hours | <a href="/dokannew/wp-admin/?cron_mail_ignore=0">Hide Notice</a></p>
+						</div><div class="updated">
+					   	<p>For automated relisting feature please setup cronjob every 1 hour: <b>http://localhost:8888/dokannew/?auction-cron=relist</b>. | <a href="/dokannew/wp-admin/?cron_relist_ignore=0">Hide Notice</a></p>
+						</div><div class="info notice notice-info is-dismissible" id="dokan-pro-whats-new-notice">
+                <p>Check What's new in Dokan Pro</p>
+                <a style="margin-bottom: 10px;" href="http://localhost:8888/dokannew/wp-admin/admin.php?page=whats-new-dokan" class="button button-primary">What's New in Dokan Pro</a>
+            <button type="button" class="notice-dismiss"><span class="screen-reader-text">Dismiss this notice.</span></button></div><div id="message" class="updated woocommerce-message">
+	<a class="woocommerce-message-close notice-dismiss" href="/dokannew/wp-admin/?wc-hide-notice=no_secure_connection&amp;_wc_notice_nonce=a75664880c">Dismiss</a>
+
+	<p>
+	Your store does not appear to be using a secure connection. We highly recommend serving your entire website over an HTTPS connection to help keep customer data secure. <a href="https://docs.woocommerce.com/document/ssl-and-https/">Learn more here.</a>	</p>
+</div><div id="message" class="updated woocommerce-message woocommerce-admin-promo-messages">
+	<a class="woocommerce-message-close notice-dismiss" href="/dokannew/wp-admin/?wc-hide-notice=wc_admin&amp;_wc_notice_nonce=a75664880c">Dismiss</a>
+
+	<p>
+		Test drive the future of WooCommerce. A quicker, javascript powered interface with exciting new features and reports.	</p>
+					<p>
+			<a href="http://localhost:8888/dokannew/wp-admin/update.php?action=install-plugin&amp;plugin=woocommerce-admin&amp;_wpnonce=ec83bb85da" class="button button-primary">Install WooCommerce Admin</a>
+		</p>
+	</div><div id="message" class="updated woocommerce-message">
+	<a class="woocommerce-message-close notice-dismiss" href="/dokannew/wp-admin/?wc-hide-notice=woocommerce_bookings_activation&amp;_wc_notice_nonce=a75664880c">Dismiss</a>
+	<p><strong>Bookings has been activated!</strong></p>
+<p><a href="http://localhost:8888/dokannew//wp-admin/post-new.php?post_type=product&amp;bookable_product=1">Add or edit a product</a> to manage bookings in the Product Data section for individual products and then go to the <a href="http://localhost:8888/dokannew//wp-admin/edit.php?post_type=wc_booking" target="_blank">Bookings page</a> to manage them individually.</p>
+</div>
+
+
+	<div id="welcome-panel" class="welcome-panel">
+		<input type="hidden" id="welcomepanelnonce" name="welcomepanelnonce" value="182b5cdb4f">		<a class="welcome-panel-close" href="http://localhost:8888/dokannew/wp-admin/?welcome=0" aria-label="Dismiss the welcome panel">Dismiss</a>
+			<div class="welcome-panel-content">
+	<h2>Welcome to WordPress!</h2>
+	<p class="about-description">We’ve assembled some links to get you started:</p>
+	<div class="welcome-panel-column-container">
+	<div class="welcome-panel-column">
+					<h3>Get Started</h3>
+			<a class="button button-primary button-hero load-customize hide-if-no-customize" href="http://localhost:8888/dokannew/wp-admin/customize.php">Customize Your Site</a>
+				<a class="button button-primary button-hero hide-if-customize" href="http://localhost:8888/dokannew/wp-admin/themes.php">Customize Your Site</a>
+								<p class="hide-if-no-customize">
+				or, <a href="http://localhost:8888/dokannew/wp-admin/customize.php?autofocus[panel]=themes">change your theme completely</a>			</p>
+			</div>
+	<div class="welcome-panel-column">
+		<h3>Next Steps</h3>
+		<ul>
+					<li><a href="http://localhost:8888/dokannew/wp-admin/post-new.php" class="welcome-icon welcome-write-blog">Write your first blog post</a></li>
+			<li><a href="http://localhost:8888/dokannew/wp-admin/post-new.php?post_type=page" class="welcome-icon welcome-add-page">Add an About page</a></li>
+			<li><a href="http://localhost:8888/dokannew/wp-admin/customize.php?autofocus[section]=static_front_page" class="welcome-icon welcome-setup-home">Set up your homepage</a></li>
+					<li><a href="http://localhost:8888/dokannew/" class="welcome-icon welcome-view-site">View your site</a></li>
+		</ul>
+	</div>
+	<div class="welcome-panel-column welcome-panel-last">
+		<h3>More Actions</h3>
+		<ul>
+					<li><a href="http://localhost:8888/dokannew/wp-admin/widgets.php" class="welcome-icon welcome-widgets">Manage widgets</a></li>
+							<li><a href="http://localhost:8888/dokannew/wp-admin/nav-menus.php" class="welcome-icon welcome-menus">Manage menus</a></li>
+							<li><a href="http://localhost:8888/dokannew/wp-admin/options-discussion.php" class="welcome-icon welcome-comments">Turn comments on or off</a></li>
+					<li><a href="https://wordpress.org/support/article/first-steps-with-wordpress-b/" class="welcome-icon welcome-learn-more">Learn more about getting started</a></li>
+		</ul>
+	</div>
+	</div>
+	</div>
+		</div>
+
+	<div id="dashboard-widgets-wrap">
+	<div id="dashboard-widgets" class="metabox-holder">
+	<div id="postbox-container-1" class="postbox-container">
+	<div id="normal-sortables" class="meta-box-sortables ui-sortable"><div id="dashboard_right_now" class="postbox ">
+<button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: At a Glance</span><span class="toggle-indicator" aria-hidden="true"></span></button><h2 class="hndle ui-sortable-handle"><span>At a Glance</span></h2>
+<div class="inside">
+	<div class="main">
+	<ul>
+	<li class="post-count"><a href="edit.php?post_type=post">1 Post</a></li><li class="page-count"><a href="edit.php?post_type=page">9 Pages</a></li>		<li class="comment-count"><a href="edit-comments.php">1 Comment</a></li>
+				<li class="comment-mod-count
+		 hidden		"><a href="edit-comments.php?comment_status=moderated" class="comments-in-moderation-text">0 Comments in moderation</a></li>
+			</ul>
+	<p id="wp-version-message"><span id="wp-version">WordPress 5.3.2 running <a href="themes.php">Dokan</a> theme.</span></p>	</div>
+	</div>
+</div>
+<div id="dashboard_activity" class="postbox ">
+<button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: Activity</span><span class="toggle-indicator" aria-hidden="true"></span></button><h2 class="hndle ui-sortable-handle"><span>Activity</span></h2>
+<div class="inside">
+<div id="activity-widget"><div id="published-posts" class="activity-block"><h3>Recently Published</h3><ul><li><span>Today, 7:03 am</span> <a href="http://localhost:8888/dokannew/wp-admin/post.php?post=1&amp;action=edit" aria-label="Edit “Hello world!”">Hello world!</a></li></ul></div><div id="latest-comments" class="activity-block"><h3>Recent Comments</h3><ul id="the-comment-list" data-wp-lists="list:comment">
+		<li id="comment-1" class="comment even thread-even depth-1 comment-item approved">
+
+			<img alt="" src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50">
+			
+			<div class="dashboard-comment-wrap has-row-actions">
+			<p class="comment-meta">
+				From <cite class="comment-author"><a href="https://wordpress.org/" rel="external nofollow ugc" class="url">A WordPress Commenter</a></cite> on <a href="http://localhost:8888/dokannew/hello-world/">Hello world!</a> <span class="approve">[Pending]</span>			</p>
+
+							<blockquote><p>Hi, this is a comment. To get started with moderating, editing, and deleting comments, please visit the Comments screen in…</p></blockquote>
+						<p class="row-actions"><span class="approve"><a href="comment.php?action=approvecomment&amp;p=1&amp;c=1&amp;_wpnonce=44aa21995a" data-wp-lists="dim:the-comment-list:comment-1:unapproved:e7e7d3:e7e7d3:new=approved" class="vim-a aria-button-if-js" aria-label="Approve this comment" role="button">Approve</a></span><span class="unapprove"><a href="comment.php?action=unapprovecomment&amp;p=1&amp;c=1&amp;_wpnonce=44aa21995a" data-wp-lists="dim:the-comment-list:comment-1:unapproved:e7e7d3:e7e7d3:new=unapproved" class="vim-u aria-button-if-js" aria-label="Unapprove this comment" role="button">Unapprove</a></span><span class="reply hide-if-no-js"> | <button type="button" onclick="window.commentReply &amp;&amp; commentReply.open('1','1');" class="vim-r button-link hide-if-no-js" aria-label="Reply to this comment">Reply</button></span><span class="edit"> | <a href="comment.php?action=editcomment&amp;c=1" aria-label="Edit this comment">Edit</a></span><span class="spam"> | <a href="comment.php?action=spamcomment&amp;p=1&amp;c=1&amp;_wpnonce=e8ae51746e" data-wp-lists="delete:the-comment-list:comment-1::spam=1" class="vim-s vim-destructive aria-button-if-js" aria-label="Mark this comment as spam" role="button">Spam</a></span><span class="trash"> | <a href="comment.php?action=trashcomment&amp;p=1&amp;c=1&amp;_wpnonce=e8ae51746e" data-wp-lists="delete:the-comment-list:comment-1::trash=1" class="delete vim-d vim-destructive aria-button-if-js" aria-label="Move this comment to the Trash" role="button">Trash</a></span><span class="view"> | <a class="comment-link" href="http://localhost:8888/dokannew/hello-world/#comment-1" aria-label="View this comment">View</a></span></p>
+						</div>
+		</li>
+	</ul><h3 class="screen-reader-text">View more comments</h3><ul class="subsubsub">
+	<li class="all"><a href="http://localhost:8888/dokannew/wp-admin/edit-comments.php?comment_status=all">All <span class="count">(<span class="all-count">1</span>)</span></a> |</li>
+	<li class="mine"><a href="http://localhost:8888/dokannew/wp-admin/edit-comments.php?comment_status=mine&amp;user_id=1">Mine <span class="count">(<span class="mine-count">0</span>)</span></a> |</li>
+	<li class="moderated"><a href="http://localhost:8888/dokannew/wp-admin/edit-comments.php?comment_status=moderated">Pending <span class="count">(<span class="pending-count">0</span>)</span></a> |</li>
+	<li class="approved"><a href="http://localhost:8888/dokannew/wp-admin/edit-comments.php?comment_status=approved">Approved <span class="count">(<span class="approved-count">1</span>)</span></a> |</li>
+	<li class="spam"><a href="http://localhost:8888/dokannew/wp-admin/edit-comments.php?comment_status=spam">Spam <span class="count">(<span class="spam-count">0</span>)</span></a> |</li>
+	<li class="trash"><a href="http://localhost:8888/dokannew/wp-admin/edit-comments.php?comment_status=trash">Trash <span class="count">(<span class="trash-count">0</span>)</span></a></li>
+</ul><form method="get">
+	<div id="com-reply" style="display:none;"><div id="replyrow" style="display:none;">
+	<fieldset class="comment-reply">
+	<legend>
+		<span class="hidden" id="editlegend">Edit Comment</span>
+		<span class="hidden" id="replyhead">Reply to Comment</span>
+		<span class="hidden" id="addhead">Add new Comment</span>
+	</legend>
+
+	<div id="replycontainer">
+	<label for="replycontent" class="screen-reader-text">Comment</label>
+	<div id="wp-replycontent-wrap" class="wp-core-ui wp-editor-wrap html-active"><link rel="stylesheet" id="editor-buttons-css" href="http://localhost:8888/dokannew/wp-includes/css/editor.min.css?ver=5.3.2" media="all">
+<div id="wp-replycontent-editor-container" class="wp-editor-container"><div id="qt_replycontent_toolbar" class="quicktags-toolbar"><input type="button" id="qt_replycontent_strong" class="ed_button button button-small" aria-label="Bold" value="b"><input type="button" id="qt_replycontent_em" class="ed_button button button-small" aria-label="Italic" value="i"><input type="button" id="qt_replycontent_link" class="ed_button button button-small" aria-label="Insert link" value="link"><input type="button" id="qt_replycontent_block" class="ed_button button button-small" aria-label="Blockquote" value="b-quote"><input type="button" id="qt_replycontent_del" class="ed_button button button-small" aria-label="Deleted text (strikethrough)" value="del"><input type="button" id="qt_replycontent_ins" class="ed_button button button-small" aria-label="Inserted text" value="ins"><input type="button" id="qt_replycontent_img" class="ed_button button button-small" aria-label="Insert image" value="img"><input type="button" id="qt_replycontent_ul" class="ed_button button button-small" aria-label="Bulleted list" value="ul"><input type="button" id="qt_replycontent_ol" class="ed_button button button-small" aria-label="Numbered list" value="ol"><input type="button" id="qt_replycontent_li" class="ed_button button button-small" aria-label="List item" value="li"><input type="button" id="qt_replycontent_code" class="ed_button button button-small" aria-label="Code" value="code"><input type="button" id="qt_replycontent_close" class="ed_button button button-small" title="Close all open tags" value="close tags"></div><textarea class="wp-editor-area" rows="20" cols="40" name="replycontent" id="replycontent"></textarea></div>
+</div>
+
+	</div>
+
+	<div id="edithead" style="display:none;">
+		<div class="inside">
+		<label for="author-name">Name</label>
+		<input type="text" name="newcomment_author" size="50" value="" id="author-name">
+		</div>
+
+		<div class="inside">
+		<label for="author-email">Email</label>
+		<input type="text" name="newcomment_author_email" size="50" value="" id="author-email">
+		</div>
+
+		<div class="inside">
+		<label for="author-url">URL</label>
+		<input type="text" id="author-url" name="newcomment_author_url" class="code" size="103" value="">
+		</div>
+	</div>
+
+	<div id="replysubmit" class="submit">
+		<p class="reply-submit-buttons">
+			<button type="button" class="save button button-primary">
+				<span id="addbtn" style="display: none;">Add Comment</span>
+				<span id="savebtn" style="display: none;">Update Comment</span>
+				<span id="replybtn" style="display: none;">Submit Reply</span>
+			</button>
+			<button type="button" class="cancel button">Cancel</button>
+			<span class="waiting spinner"></span>
+		</p>
+		<div class="notice notice-error notice-alt inline hidden">
+			<p class="error"></p>
+		</div>
+	</div>
+
+	<input type="hidden" name="action" id="action" value="">
+	<input type="hidden" name="comment_ID" id="comment_ID" value="">
+	<input type="hidden" name="comment_post_ID" id="comment_post_ID" value="">
+	<input type="hidden" name="status" id="status" value="">
+	<input type="hidden" name="position" id="position" value="-1">
+	<input type="hidden" name="checkbox" id="checkbox" value="0">
+	<input type="hidden" name="mode" id="mode" value="dashboard">
+	<input type="hidden" id="_ajax_nonce-replyto-comment" name="_ajax_nonce-replyto-comment" value="b3e3b2ade1"><input type="hidden" id="_wp_unfiltered_html_comment" name="_wp_unfiltered_html_comment" value="4e63db2acd">	</fieldset>
+	</div></div>
+	</form>
+	<div class="hidden" id="trash-undo-holder">
+	<div class="trash-undo-inside">
+		Comment by <strong></strong> moved to the trash.		<span class="undo untrash"><a href="#">Undo</a></span>
+	</div>
+</div>
+<div class="hidden" id="spam-undo-holder">
+	<div class="spam-undo-inside">
+		Comment by <strong></strong> marked as spam.		<span class="undo unspam"><a href="#">Undo</a></span>
+	</div>
+</div>
+	</div></div></div>
+</div>
+<div id="email_log_dashboard_widget" class="postbox ">
+<button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: Email Logs Summary</span><span class="toggle-indicator" aria-hidden="true"></span></button><h2 class="hndle ui-sortable-handle"><span>Email Logs Summary</span></h2>
+<div class="inside">
+
+		<p>
+			Total number of emails logged: <strong>6</strong>
+		</p>
+
+				
+		<ul class="subsubsub" style="float: none">
+			<li><a href="admin.php?page=email-log">Email Logs</a> <span style="color: #ddd"> | </span></li>
+			<li><a href="admin.php?page=email-log-settings">Settings</a> <span style="color: #ddd"> | </span></li>
+			<li><a href="admin.php?page=email-log-addons">Addons</a></li>
+		</ul>
+
+		</div>
+</div>
+<div id="woocommerce_dashboard_recent_reviews" class="postbox ">
+<button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: WooCommerce Recent Reviews</span><span class="toggle-indicator" aria-hidden="true"></span></button><h2 class="hndle ui-sortable-handle"><span>WooCommerce Recent Reviews</span></h2>
+<div class="inside">
+<p>There are no product reviews yet.</p></div>
+</div>
+<div id="woocommerce_dashboard_status" class="postbox ">
+<button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: WooCommerce Status</span><span class="toggle-indicator" aria-hidden="true"></span></button><h2 class="hndle ui-sortable-handle"><span>WooCommerce Status</span></h2>
+<div class="inside">
+<ul class="wc_status_list">				<li class="sales-this-month">
+				<a href="http://localhost:8888/dokannew/wp-admin/admin.php?page=wc-reports&amp;tab=orders&amp;range=month">
+					<span class="wc_sparkline lines tips" data-color="#777" data-tip="Sold $0.00 worth in the last 7 days" data-barwidth="57600000" data-sparkline="[[&quot;1580256000000&quot;,0],[&quot;1580342400000&quot;,0],[&quot;1580428800000&quot;,0],[&quot;1580515200000&quot;,0],[&quot;1580601600000&quot;,0],[&quot;1580688000000&quot;,0],[&quot;1580774400000&quot;,0]]" style="padding: 0px;"><canvas class="flot-base" width="96" height="48" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 48px; height: 24px;"></canvas><canvas class="flot-overlay" width="96" height="48" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 48px; height: 24px;"></canvas></span>					<strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>0.00</span></strong> net sales this month					</a>
+				</li>
+								<li class="processing-orders">
+			<a href="http://localhost:8888/dokannew/wp-admin/edit.php?post_status=wc-processing&amp;post_type=shop_order">
+				<strong>0 orders</strong> awaiting processing				</a>
+			</li>
+			<li class="on-hold-orders">
+				<a href="http://localhost:8888/dokannew/wp-admin/edit.php?post_status=wc-on-hold&amp;post_type=shop_order">
+				<strong>0 orders</strong> on-hold				</a>
+			</li>
+						<li class="low-in-stock">
+			<a href="http://localhost:8888/dokannew/wp-admin/admin.php?page=wc-reports&amp;tab=stock&amp;report=low_in_stock">
+				<strong>0 products</strong> low in stock				</a>
+			</li>
+			<li class="out-of-stock">
+				<a href="http://localhost:8888/dokannew/wp-admin/admin.php?page=wc-reports&amp;tab=stock&amp;report=out_of_stock">
+				<strong>0 products</strong> out of stock				</a>
+			</li>
+					<li class="processing-orders">
+			<a href="http://localhost:8888/dokannew/wp-admin/edit.php?post_type=wc_booking&amp;post_status=paid">
+				<strong>0 booking(s)</strong> new bookings this month			</a>
+		</li>
+		<li class="low-in-stock">
+			<a href="http://localhost:8888/dokannew/wp-admin/edit.php?post_type=wc_booking&amp;post_status=pending-confirmation ">
+				<strong>0 booking(s)</strong> require confirmation			</a>
+		</li>
+		</ul></div>
+</div>
+</div>	</div>
+	<div id="postbox-container-2" class="postbox-container">
+	<div id="side-sortables" class="meta-box-sortables ui-sortable"><div id="dashboard_quick_press" class="postbox ">
+<button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: <span class="hide-if-no-js">Quick Draft</span> <span class="hide-if-js">Your Recent Drafts</span></span><span class="toggle-indicator" aria-hidden="true"></span></button><h2 class="hndle ui-sortable-handle"><span><span class="hide-if-no-js">Quick Draft</span> <span class="hide-if-js">Your Recent Drafts</span></span></h2>
+<div class="inside">
+
+	<form name="post" action="http://localhost:8888/dokannew/wp-admin/post.php" method="post" id="quick-press" class="initial-form hide-if-no-js">
+
+		
+		<div class="input-text-wrap" id="title-wrap">
+			<label for="title">
+				Title			</label>
+			<input type="text" name="post_title" id="title" autocomplete="off">
+		</div>
+
+		<div class="textarea-wrap" id="description-wrap">
+			<label for="content">Content</label>
+			<textarea name="content" id="content" placeholder="What’s on your mind?" class="mceEditor" rows="3" cols="15" autocomplete="off"></textarea>
+		</div>
+
+		<p class="submit">
+			<input type="hidden" name="action" id="quickpost-action" value="post-quickdraft-save">
+			<input type="hidden" name="post_ID" value="4">
+			<input type="hidden" name="post_type" value="post">
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="f6b13ed909"><input type="hidden" name="_wp_http_referer" value="/dokannew/wp-admin/">			<input type="submit" name="save" id="save-post" class="button button-primary" value="Save Draft">			<br class="clear">
+		</p>
+
+	</form>
+	</div>
+</div>
+<div id="dashboard_primary" class="postbox ">
+<button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: WordPress Events and News</span><span class="toggle-indicator" aria-hidden="true"></span></button><h2 class="hndle ui-sortable-handle"><span>WordPress Events and News</span></h2>
+<div class="inside">
+
+	<div class="community-events-errors notice notice-error inline" aria-hidden="true">
+		<p class="hide-if-js">
+			This widget requires JavaScript.		</p>
+
+		<p class="community-events-error-occurred" aria-hidden="true">
+			An error occurred. Please try again.		</p>
+
+		<p class="community-events-could-not-locate" aria-hidden="true"></p>
+	</div>
+
+	<div class="community-events-loading hide-if-no-js" aria-hidden="true">
+		Loading…	</div>
+
+		<div id="community-events" class="community-events" aria-hidden="false">
+		<div class="activity-block">
+			<p>
+				<span id="community-events-location-message" aria-hidden="false">Enter your closest city to find nearby events.</span>
+
+				<button class="button-link community-events-toggle-location" aria-label="Edit city" aria-expanded="true" aria-hidden="false">
+					<span class="dashicons dashicons-edit"></span>
+				</button>
+			</p>
+
+			<form class="community-events-form" aria-hidden="false" action="http://localhost:8888/dokannew/wp-admin/admin-ajax.php" method="post">
+				<label for="community-events-location">
+					City:				</label>
+								<input id="community-events-location" class="regular-text" type="text" name="community-events-location" placeholder="Cincinnati">
+
+				<input type="submit" name="community-events-submit" id="community-events-submit" class="button" value="Submit">
+				<button class="community-events-cancel button-link" type="button" aria-expanded="true">
+					Cancel				</button>
+
+				<span class="spinner"></span>
+			</form>
+		</div>
+
+		<ul class="community-events-results activity-block last" aria-hidden="true"></ul>
+	</div>
+
+	
+	<div class="wordpress-news hide-if-no-js">
+		<div class="rss-widget"><ul><li><a class="rsswidget" href="https://wordpress.org/news/2020/02/the-month-in-wordpress-january-2020/">The Month in WordPress: January 2020</a></li></ul></div><div class="rss-widget"><ul><li><a class="rsswidget" href="https://poststatus.com/working-with-business-partners/">Post Status: Working on multiple things, and working with partners</a></li><li><a class="rsswidget" href="https://wptavern.com/ahmad-awais-launches-script-to-automatically-deploy-wordpress-plugin-updates">WPTavern: Ahmad Awais Launches Script to Automatically Deploy WordPress Plugin Updates</a></li><li><a class="rsswidget" href="https://wordpress.org/news/2020/02/the-month-in-wordpress-january-2020/">WordPress.org blog: The Month in WordPress: January 2020</a></li></ul></div>	</div>
+
+	<p class="community-events-footer">
+		<a href="https://make.wordpress.org/community/meetups-landing-page" target="_blank">Meetups <span class="screen-reader-text">(opens in a new tab)</span><span aria-hidden="true" class="dashicons dashicons-external"></span></a>
+		|
+
+		<a href="https://central.wordcamp.org/schedule/" target="_blank">WordCamps <span class="screen-reader-text">(opens in a new tab)</span><span aria-hidden="true" class="dashicons dashicons-external"></span></a>
+		|
+
+		<a href="https://wordpress.org/news/" target="_blank">News <span class="screen-reader-text">(opens in a new tab)</span><span aria-hidden="true" class="dashicons dashicons-external"></span></a>	</p>
+
+	</div>
+</div>
+<div id="sa_dashboard_products_news" class="postbox ">
+<button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: wpgenie.org - Our latest themes and plugins</span><span class="toggle-indicator" aria-hidden="true"></span></button><h2 class="hndle ui-sortable-handle"><span>wpgenie.org - Our latest themes and plugins</span></h2>
+<div class="inside">
+<p><strong>RSS Error:</strong> A feed could not be found at http://wpgenie.org/tag/dashboard/feed/. A feed with an invalid mime type may fall victim to this error, or SimplePie was unable to auto-discover it.. Use force_feed() if you are certain this URL is a real feed.</p></div>
+</div>
+</div>	</div>
+	<div id="postbox-container-3" class="postbox-container">
+	<div id="column3-sortables" class="meta-box-sortables ui-sortable empty-container" data-emptystring="Drag boxes here"></div>	</div>
+	<div id="postbox-container-4" class="postbox-container">
+	<div id="column4-sortables" class="meta-box-sortables ui-sortable empty-container" data-emptystring="Drag boxes here"></div>	</div>
+</div>
+
+	<input type="hidden" id="closedpostboxesnonce" name="closedpostboxesnonce" value="cc3158b258"><input type="hidden" id="meta-box-order-nonce" name="meta-box-order-nonce" value="c19fc8f454">	</div><!-- dashboard-widgets-wrap -->
+
+</div><!-- wrap -->
+
+
+	<script id="tmpl-community-events-attend-event-near" type="text/template">
+		Attend an upcoming event near <strong>{{ data.location.description }}</strong>.	</script>
+
+	<script id="tmpl-community-events-could-not-locate" type="text/template">
+		We couldn&#8217;t locate <em>{{data.unknownCity}}</em>. Please try another nearby city. For example: Kansas City; Springfield; Portland.	</script>
+
+	<script id="tmpl-community-events-event-list" type="text/template">
+		<# _.each( data.events, function( event ) { #>
+			<li class="event event-{{ event.type }} wp-clearfix">
+				<div class="event-info">
+					<div class="dashicons event-icon" aria-hidden="true"></div>
+					<div class="event-info-inner">
+						<a class="event-title" href="{{ event.url }}">{{ event.title }}</a>
+						<span class="event-city">{{ event.location.location }}</span>
+					</div>
+				</div>
+
+				<div class="event-date-time">
+					<span class="event-date">{{ event.formatted_date }}</span>
+					<# if ( 'meetup' === event.type ) { #>
+						<span class="event-time">{{ event.formatted_time }}</span>
+					<# } #>
+				</div>
+			</li>
+		<# } ) #>
+	</script>
+
+	<script id="tmpl-community-events-no-upcoming-events" type="text/template">
+		<li class="event-none">
+			<# if ( data.location.description ) { #>
+				There aren&#8217;t any events scheduled near {{ data.location.description }} at the moment. Would you like to <a href="https://make.wordpress.org/community/handbook/meetup-organizer/welcome/">organize one</a>?
+			<# } else { #>
+				There aren&#8217;t any events scheduled near you at the moment. Would you like to <a href="https://make.wordpress.org/community/handbook/meetup-organizer/welcome/">organize one</a>?			<# } #>
+		</li>
+	</script>
+	
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="wpfooter" role="contentinfo">
+		<p id="footer-left" class="alignleft">
+		<span id="footer-thankyou">Thank you for creating with <a href="https://wordpress.org/">WordPress</a>.</span>	</p>
+	<p id="footer-upgrade" class="alignright">
+		Version 5.3.2	</p>
+	<div class="clear"></div>
+</div>
+<script type="text/javascript">list_args = {"class":"WP_Comments_List_Table","screen":{"id":"dashboard","base":"dashboard"}};</script>
+<script type="text/javascript">list_args = {"class":"WP_Comments_List_Table","screen":{"id":"dashboard","base":"dashboard"}};</script>
+		<script type="text/javascript">
+			window.wcTracks = window.wcTracks || {};
+			window.wcTracks.recordEvent = function() {};
+		</script>
+			<div id="wp-auth-check-wrap" class="hidden">
+	<div id="wp-auth-check-bg"></div>
+	<div id="wp-auth-check">
+	<button type="button" class="wp-auth-check-close button-link"><span class="screen-reader-text">Close dialog</span></button>
+			<div id="wp-auth-check-form" class="loading" data-src="http://localhost:8888/dokannew/wp-login.php?interim-login=1&amp;wp_lang=en_US"></div>
+			<div class="wp-auth-fallback">
+		<p><b class="wp-auth-fallback-expired" tabindex="0">Session expired</b></p>
+		<p><a href="http://localhost:8888/dokannew/wp-login.php" target="_blank">Please log in again.</a>
+		The login page will open in a new tab. After logging in you can close it and return to this page.</p>
+	</div>
+	</div>
+	</div>
+	<script>
+var dokanSubscription = {"ajaxurl":"http:\/\/localhost:8888\/dokannew\/wp-admin\/admin-ajax.php","subscriptionLengths":["Never",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]};
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var commonL10n = {"warnDelete":"You are about to permanently delete these items from your site.\nThis action cannot be undone.\n 'Cancel' to stop, 'OK' to delete.","dismiss":"Dismiss this notice.","collapseMenu":"Collapse Main menu","expandMenu":"Expand Main menu"};var wpAjax = {"noPerm":"Sorry, you are not allowed to do that.","broken":"Something went wrong."};var quicktagsL10n = {"closeAllOpenTags":"Close all open tags","closeTags":"close tags","enterURL":"Enter the URL","enterImageURL":"Enter the URL of the image","enterImageDescription":"Enter a description of the image","textdirection":"text direction","toggleTextdirection":"Toggle Editor Text Direction","dfw":"Distraction-free writing mode","strong":"Bold","strongClose":"Close bold tag","em":"Italic","emClose":"Close italic tag","link":"Insert link","blockquote":"Blockquote","blockquoteClose":"Close blockquote tag","del":"Deleted text (strikethrough)","delClose":"Close deleted text tag","ins":"Inserted text","insClose":"Close inserted text tag","image":"Insert image","ul":"Bulleted list","ulClose":"Close bulleted list tag","ol":"Numbered list","olClose":"Close numbered list tag","li":"List item","liClose":"Close list item tag","code":"Code","codeClose":"Close code tag","more":"Insert Read More tag"};var adminCommentsL10n = {"hotkeys_highlight_first":"","hotkeys_highlight_last":"","replyApprove":"Approve and Reply","reply":"Reply","warnQuickEdit":"Are you sure you want to edit this comment?\nThe changes you made will be lost.","warnCommentChanges":"Are you sure you want to do this?\nThe comment changes you made will be lost.","docTitleComments":"Comments","docTitleCommentsCount":"Comments (%s)"};var postBoxL10n = {"postBoxEmptyString":"Drag boxes here"};var communityEventsData = {"nonce":"1d07496f6b","cache":"","l10n":{"enter_closest_city":"Enter your closest city to find nearby events.","error_occurred_please_try_again":"An error occurred. Please try again.","attend_event_near_generic":"Attend an upcoming event near you.","could_not_locate_city":"We couldn&#8217;t locate %s. Please try another nearby city. For example: Kansas City; Springfield; Portland.","city_updated":"City updated. Listing events near %s."}};var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/localhost:8888\/dokannew\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};var plugininstallL10n = {"plugin_information":"Plugin:","plugin_modal_label":"Plugin details","ays":"Are you sure you want to install this plugin?"};var heartbeatSettings = {"nonce":"a99aad9542"};var authcheckL10n = {"beforeunload":"Your session has expired. You can log in again from this page or go to the login page.","interval":"180"};var wpLinkL10n = {"title":"Insert\/edit link","update":"Update","save":"Add Link","noTitle":"(no title)","noMatchesFound":"No results found.","linkSelected":"Link selected.","linkInserted":"Link inserted."};var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};/* ]]> */
+</script>
+<script type="text/javascript" src="http://localhost:8888/dokannew/wp-admin/load-scripts.php?c=1&amp;load%5Bchunk_0%5D=hoverIntent,common,hoverintent-js,admin-bar,wp-ajax-response,jquery-color,wp-lists,quicktags,jquery-query,admin-comments,jquery-&amp;load%5Bchunk_1%5D=ui-widget,jquery-ui-mouse,jquery-ui-sortable,postbox,dashboard,thickbox,plugin-install,shortcode,media-upload,svg-painter,wp-hoo&amp;load%5Bchunk_2%5D=ks,heartbeat,wp-auth-check,wplink,jquery-ui-position,jquery-ui-menu,jquery-ui-autocomplete&amp;ver=5.3.2"></script>
+<script src="http://localhost:8888/dokannew/wp-content/plugins/dokan-plugin/includes/modules/subscription/assets/js/admin-script.js?ver=5.3.2"></script>
+
+		<script type="text/javascript">
+		tinyMCEPreInit = {
+			baseURL: "http://localhost:8888/dokannew/wp-includes/js/tinymce",
+			suffix: ".min",
+						mceInit: {},
+			qtInit: {'replycontent':{id:"replycontent",buttons:"strong,em,link,block,del,ins,img,ul,ol,li,code,close"}},
+			ref: {plugins:"",theme:"modern",language:""},
+			load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+		</script>
+				<script type="text/javascript">
+		
+		( function() {
+			var init, id, $wrap;
+
+			if ( typeof tinymce !== 'undefined' ) {
+				if ( tinymce.Env.ie && tinymce.Env.ie < 11 ) {
+					tinymce.$( '.wp-editor-wrap ' ).removeClass( 'tmce-active' ).addClass( 'html-active' );
+					return;
+				}
+
+				for ( id in tinyMCEPreInit.mceInit ) {
+					init = tinyMCEPreInit.mceInit[id];
+					$wrap = tinymce.$( '#wp-' + id + '-wrap' );
+
+					if ( ( $wrap.hasClass( 'tmce-active' ) || ! tinyMCEPreInit.qtInit.hasOwnProperty( id ) ) && ! init.wp_skip_init ) {
+						tinymce.init( init );
+
+						if ( ! window.wpActiveEditor ) {
+							window.wpActiveEditor = id;
+						}
+					}
+				}
+			}
+
+			if ( typeof quicktags !== 'undefined' ) {
+				for ( id in tinyMCEPreInit.qtInit ) {
+					quicktags( tinyMCEPreInit.qtInit[id] );
+
+					if ( ! window.wpActiveEditor ) {
+						window.wpActiveEditor = id;
+					}
+				}
+			}
+		}());
+		</script>
+				<div id="wp-link-backdrop" style="display: none"></div>
+		<div id="wp-link-wrap" class="wp-core-ui" style="display: none" role="dialog" aria-labelledby="link-modal-title">
+		<form id="wp-link" tabindex="-1">
+		<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="6b6c3aaa9d">		<h1 id="link-modal-title">Insert/edit link</h1>
+		<button type="button" id="wp-link-close"><span class="screen-reader-text">Close</span></button>
+		<div id="link-selector">
+			<div id="link-options">
+				<p class="howto" id="wplink-enter-url">Enter the destination URL</p>
+				<div>
+					<label><span>URL</span>
+					<input id="wp-link-url" type="text" aria-describedby="wplink-enter-url"></label>
+				</div>
+				<div class="wp-link-text-field">
+					<label><span>Link Text</span>
+					<input id="wp-link-text" type="text"></label>
+				</div>
+				<div class="link-target">
+					<label><span></span>
+					<input type="checkbox" id="wp-link-target"> Open link in a new tab</label>
+				</div>
+			</div>
+			<p class="howto" id="wplink-link-existing-content">Or link to existing content</p>
+			<div id="search-panel">
+				<div class="link-search-wrapper">
+					<label>
+						<span class="search-label">Search</span>
+						<input type="search" id="wp-link-search" class="link-search-field" autocomplete="off" aria-describedby="wplink-link-existing-content">
+						<span class="spinner"></span>
+					</label>
+				</div>
+				<div id="search-results" class="query-results" tabindex="0">
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+				<div id="most-recent-results" class="query-results" tabindex="0">
+					<div class="query-notice" id="query-notice-message">
+						<em class="query-notice-default">No search term specified. Showing recent items.</em>
+						<em class="query-notice-hint screen-reader-text">Search or use up and down arrow keys to select an item.</em>
+					</div>
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="submitbox">
+			<div id="wp-link-cancel">
+				<button type="button" class="button">Cancel</button>
+			</div>
+			<div id="wp-link-update">
+				<input type="submit" value="Add Link" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+			</div>
+		</div>
+		</form>
+		</div>
+		
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+
+
+<div class="quick-draft-textarea-clone" style="display: none; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif; font-size: 14px; line-height: 20px; padding: 6px 7px; white-space: pre-wrap; overflow-wrap: break-word;"></div><div id="a11y-speak-polite" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div><div id="a11y-speak-assertive" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div></body></html>
